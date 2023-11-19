@@ -22,8 +22,3 @@ variable "key_name" {
   description = "ec2 key pair"
   default = "dod"
 }
-
-variable "openvpn_block" {
-  description = "openvpn cidr"
-  default = "192.168.254.0/24"
-}

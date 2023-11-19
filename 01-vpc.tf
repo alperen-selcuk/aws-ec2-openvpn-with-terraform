@@ -125,14 +125,6 @@ resource "aws_security_group" "inline" {
   vpc_id      = aws_vpc.main.id
 
   ingress {
-    description = "openvpn access"
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = [var.openvpn_block]
-  }
-
-  ingress {
     description = "inline access"
     from_port   = 0
     to_port     = 0
